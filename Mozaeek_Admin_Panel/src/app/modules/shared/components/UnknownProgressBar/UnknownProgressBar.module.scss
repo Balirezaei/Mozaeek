@@ -1,0 +1,24 @@
+.bar {
+  background-color: #2196f3;
+  height: 30px;
+  border-radius: 4px;
+  background-image: url('../../../../../assets/black-twill.png');
+  -webkit-animation: loading 0.3s linear infinite;
+  animation: loading 0.3s linear infinite;
+}
+@-webkit-keyframes loading {
+  from {
+    background-position: center left;
+  }
+  to {
+    background-position: center left 14px;
+  }
+}
+@keyframes loading {
+  from {
+    background-position: center left;
+  }
+  to {
+    background-position: center left 14px;
+  }
+}

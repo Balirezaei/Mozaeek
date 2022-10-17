@@ -1,0 +1,13 @@
+.with-dynamic-delete-button {
+  & .ant-form-item-control-input-content{
+    display: flex;
+    align-items: center;
+    & svg {
+      margin-right: 5px;
+    }
+  }
+}
+
+.ant-table-content tr:nth-child(2n) td {
+  background-color: #eeeeee;
+}

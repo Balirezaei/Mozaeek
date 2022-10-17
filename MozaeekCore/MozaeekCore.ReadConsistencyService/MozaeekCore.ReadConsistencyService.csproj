@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Castle.Core" Version="4.4.0" />
+    <PackageReference Include="MassTransit.AspNetCore" Version="7.1.3" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="7.1.3" />
+    <PackageReference Include="Mozaeek.CR.PublicDto" Version="1.0.19" />
+    <PackageReference Include="Mozaeek.CR.PublicEvent" Version="1.0.9" />
+    <PackageReference Include="Serilog" Version="2.10.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="4.1.1-dev-00229" />
+    <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="3.1.0" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MozaeekCore.Domain.Contract\MozaeekCore.Domain.Contract.csproj" />
+    <ProjectReference Include="..\MozaeekCore.Messaging.RabbitMQ\MozaeekCore.Messaging.RabbitMQ.csproj" />
+    <ProjectReference Include="..\MozaeekCore.OutBoxManagement\MozaeekCore.OutBoxManagement.csproj" />
+    <ProjectReference Include="..\MozaeekCore.Persistense.MongoDb\MozaeekCore.Persistense.MongoDb.csproj" />
+    <ProjectReference Include="..\MozaeekCore.QueryModel\MozaeekCore.QueryModel.csproj" />
+    <ProjectReference Include="..\MozaeekCore.SubDomainEvent\MozaeekCore.SubDomainEvent.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Consumers\UserProfile\" />
+  </ItemGroup>
+
+
+</Project>

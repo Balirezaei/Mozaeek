@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="MongoDB.Bson" Version="2.11.6" />
+		<PackageReference Include="Mozaeek.CR.PublicDto" Version="1.0.19" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\MozaeekCore.Common\MozaeekCore.Common.csproj" />
+		<ProjectReference Include="..\MozaeekCore.Enum\MozaeekCore.Enum.csproj" />
+	</ItemGroup>
+</Project>

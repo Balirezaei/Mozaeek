@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Karmizban.Support.ApplicationService.Contract\Karmizban.Support.ApplicationService.Contract.csproj" />
+    <ProjectReference Include="..\Karmizban.Support.Domain\Karmizban.Support.Domain.csproj" />
+    <ProjectReference Include="..\Karmizban.Support.EF\Karmizban.Support.EF.csproj" />
+  </ItemGroup>
+
+</Project>

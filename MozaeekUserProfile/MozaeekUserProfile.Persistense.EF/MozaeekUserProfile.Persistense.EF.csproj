@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20210309073738_updateUserdashboard.cs" />
+    <Compile Remove="Migrations\20210309073738_updateUserdashboard.Designer.cs" />
+    <Compile Remove="Migrations\20210310111618_UserPoint.cs" />
+    <Compile Remove="Migrations\20210310111618_UserPoint.Designer.cs" />
+    <Compile Remove="Migrations\20210528142052_a.cs" />
+    <Compile Remove="Migrations\20210528142052_a.Designer.cs" />
+    <Compile Remove="Migrations\20210609173225_c.cs" />
+    <Compile Remove="Migrations\20210609173225_c.Designer.cs" />
+    <Compile Remove="Migrations\20210609173657_QCode.cs" />
+    <Compile Remove="Migrations\20210609173657_QCode.Designer.cs" />
+    <Compile Remove="Migrations\20210809184421_useQuestoNFiled.cs" />
+    <Compile Remove="Migrations\20210809184421_useQuestoNFiled.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MozaeekUserProfile.Domain\MozaeekUserProfile.Domain.csproj" />
+    <ProjectReference Include="..\MozaeekUserProfile.Framework\MozaeekUserProfile.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Castle.Core" Version="4.4.0" />
+    <PackageReference Include="MassTransit" Version="7.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.11" />
+  </ItemGroup>
+
+</Project>

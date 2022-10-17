@@ -1,0 +1,20 @@
+trigger:
+- demo
+
+pool: Default
+
+steps:
+  - task: Npm@1
+    inputs:
+      command: 'install'
+  - task: Npm@1
+    displayName: 'Building'
+    inputs:
+      command: 'custom'
+      customCommand: 'run build:staging'
+  - task: CopyFiles@2
+    inputs:
+      SourceFolder: 'build'
+      Contents: '**'
+      TargetFolder: 'C:\inetpub\wwwroot\ReactProjectDev'
+      CleanTargetFolder: true

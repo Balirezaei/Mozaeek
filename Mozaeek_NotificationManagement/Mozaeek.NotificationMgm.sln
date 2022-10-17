@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mozaeek.Notification.API", "Mozaeek.Notification.API\Mozaeek.Notification.API.csproj", "{BAFA0E69-6771-46E1-A6D0-1863CE834B67}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mozaeek.Notification.Domain", "Mozaeek.Notification.Domain\Mozaeek.Notification.Domain.csproj", "{94890111-0879-471D-B1C1-4B84E931817E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mozaeek.Notification.Sms.Services", "Mozaeek.Notification.Sms.Services\Mozaeek.Notification.Sms.Services.csproj", "{77804290-3F84-4504-AE3F-B2B32DBB9118}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mozaeek.Notification.Persistence", "Mozaeek.Notification.Persistence\Mozaeek.Notification.Persistence.csproj", "{C9A8BE31-97C6-4DD3-8111-0565332C187E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mozaeek.Notification.BackgroundJob", "Mozaeek.Notification.BackgroundJob\Mozaeek.Notification.BackgroundJob.csproj", "{E25262FA-E470-496B-86BA-43E11466BD4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mozaeek.Notification.PushNotificationBackgroundJob", "Mozaeek.Notification.PushNotificationBackgroundJob\Mozaeek.Notification.PushNotificationBackgroundJob.csproj", "{A4ED775B-9CD1-472A-A466-D7F690AA3703}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAFA0E69-6771-46E1-A6D0-1863CE834B67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAFA0E69-6771-46E1-A6D0-1863CE834B67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAFA0E69-6771-46E1-A6D0-1863CE834B67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAFA0E69-6771-46E1-A6D0-1863CE834B67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94890111-0879-471D-B1C1-4B84E931817E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94890111-0879-471D-B1C1-4B84E931817E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94890111-0879-471D-B1C1-4B84E931817E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94890111-0879-471D-B1C1-4B84E931817E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77804290-3F84-4504-AE3F-B2B32DBB9118}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77804290-3F84-4504-AE3F-B2B32DBB9118}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77804290-3F84-4504-AE3F-B2B32DBB9118}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77804290-3F84-4504-AE3F-B2B32DBB9118}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9A8BE31-97C6-4DD3-8111-0565332C187E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9A8BE31-97C6-4DD3-8111-0565332C187E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9A8BE31-97C6-4DD3-8111-0565332C187E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9A8BE31-97C6-4DD3-8111-0565332C187E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E25262FA-E470-496B-86BA-43E11466BD4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E25262FA-E470-496B-86BA-43E11466BD4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E25262FA-E470-496B-86BA-43E11466BD4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E25262FA-E470-496B-86BA-43E11466BD4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4ED775B-9CD1-472A-A466-D7F690AA3703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4ED775B-9CD1-472A-A466-D7F690AA3703}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4ED775B-9CD1-472A-A466-D7F690AA3703}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4ED775B-9CD1-472A-A466-D7F690AA3703}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AFA934FC-8ADF-4E75-84D5-E0F80BB83AA1}
+	EndGlobalSection
+EndGlobal

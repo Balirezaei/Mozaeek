@@ -1,0 +1,17 @@
+export enum ApiModule {
+  Labels = 'Labels',
+  RequestActs = 'RequestActs',
+  Points = 'Points',
+  RequestOrganizations = 'RequestOrganizations',
+  Subjects = 'Subjects',
+  RequestTargets = 'RequestTargets',
+  Requests = 'Requests',
+  AnnouncementRequests = 'AnnouncementRequests',
+  RSS = 'RSS',
+  ProcessedNews = 'ProcessedNews',
+  UnprocessedNews = 'UnprocessedNews',
+  Users = 'Users',
+  Synonyms = 'Synonyms',
+  SubjectPricing = 'SubjectPricing',
+  RequestPricing = 'RequestPricing',
+}

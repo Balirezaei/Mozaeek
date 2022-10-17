@@ -1,0 +1,269 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/account/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 100
+        }
+      ],
+      "UpstreamPathTemplate": "/api/account/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "SwaggerKey": "Core"
+    },
+    {
+      "DownstreamPathTemplate": "/api/test/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 100
+        }
+      ],
+      "UpstreamPathTemplate": "/api/test/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ApiKey"
+      },
+      "SwaggerKey": "Core"
+    },
+    {
+      "DownstreamPathTemplate": "/api/executiveTechnician/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 100
+        }
+      ],
+      "UpstreamPathTemplate": "/api/executiveTechnician/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Post" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ApiKey"
+      },
+      "SwaggerKey": "Core"
+    },
+    {
+      "DownstreamPathTemplate": "/api/request/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 100
+        }
+      ],
+      "UpstreamPathTemplate": "/api/request/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Post" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ApiKey"
+      },
+      "SwaggerKey": "Core"
+    },
+    {
+      "DownstreamPathTemplate": "/api/PreRequest/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 100
+        }
+      ],
+      "UpstreamPathTemplate": "/api/PreRequest/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Post" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ApiKey"
+      },
+      "SwaggerKey": "Core"
+    },
+    {
+      "DownstreamPathTemplate": "/api/rss/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 100
+        }
+      ],
+      "UpstreamPathTemplate": "/api/rss/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Post" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ApiKey"
+      },
+      "SwaggerKey": "Core"
+    },
+    {
+      "DownstreamPathTemplate": "/api/label/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 100
+        }
+      ],
+      "UpstreamPathTemplate": "/api/label/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Post" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ApiKey"
+      },
+      "SwaggerKey": "Core"
+    },
+    {
+      "DownstreamPathTemplate": "/api/point/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 100
+        }
+      ],
+      "UpstreamPathTemplate": "/api/point/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Post" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ApiKey"
+      },
+      "SwaggerKey": "Core"
+    },
+    {
+      "DownstreamPathTemplate": "/api/requestAct/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 100
+        }
+      ],
+      "UpstreamPathTemplate": "/api/requestAct/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Post" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ApiKey"
+      },
+      "SwaggerKey": "Core"
+    },
+    {
+      "DownstreamPathTemplate": "/api/requestOrg/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 100
+        }
+      ],
+      "UpstreamPathTemplate": "/api/requestOrg/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Post" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ApiKey"
+      },
+      "SwaggerKey": "Core"
+    },
+    {
+      "DownstreamPathTemplate": "/api/requestTarget/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 100
+        }
+      ],
+      "UpstreamPathTemplate": "/api/requestTarget/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Post" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ApiKey"
+      },
+      "SwaggerKey": "Core"
+    },
+    {
+      "DownstreamPathTemplate": "/api/subject/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 100
+        }
+      ],
+      "UpstreamPathTemplate": "/api/subject/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Post" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ApiKey"
+      },
+      "SwaggerKey": "Core"
+    },
+    {
+      "DownstreamPathTemplate": "/api/RequestPrice/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 100
+        }
+      ],
+      "UpstreamPathTemplate": "/api/RequestPrice/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Post" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ApiKey"
+      },
+      "SwaggerKey": "Core"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Announcement/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 100
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Announcement/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Post" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ApiKey"
+      },
+      "SwaggerKey": "Core"
+    },
+    {
+      "DownstreamPathTemplate": "/api/SubjectPrice/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 100
+        }
+      ],
+      "UpstreamPathTemplate": "/api/SubjectPrice/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Post" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ApiKey"
+      },
+      "SwaggerKey": "Core"
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 100
+        }
+      ],
+      "UpstreamPathTemplate": "/api/User/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Post" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ApiKey"
+      },
+      "SwaggerKey": "Core"
+    }
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "Core",
+      "Config": [
+        {
+          "Name": "Core Domain API",
+          "Version": "v1",
+          "Url": "http://localhost:100/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+body,
+html,
+.tooltip-inner,
+.ant-pagination-item,
+.ant-steps-icon {
+  font-family: Vazir, 'sans-serif';
+}
+
+.ant-card-head-title,
+.ant-btn {
+  .anticon {
+    margin-left: -1px;
+  }
+}
+
+.ant-tabs-rtl .ant-tabs-nav .ant-tabs-tab .anticon {
+  margin-left: 4px;
+}
+
+.ant-col-24.ant-form-item-label {
+  text-align: right;
+}
+
+.ltr-tel-input {
+  direction: ltr;
+  display: inline-block;
+  width: auto;
+  text-align: left;
+  font-family: Vazir, 'sans-serif';
+  .dial-code {
+    display: inline-block;
+  }
+  .country-list .flag {
+    display: inline-block;
+    float: right;
+    margin-top: 5px !important;
+  }
+  .country-name {
+    float: right;
+  }
+  .search-box {
+    width: calc(100% - 35px) !important;
+    text-align: right;
+  }
+}
+
+.mirror-in-rtl {
+  transform: scale(-1, 1);
+}
+.ui-badge {
+  right: -10px;
+  &::before {
+    right: 0;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+  }
+}
+.ant-btn > .fas + span,
+.ant-btn > span + .fas {
+  margin-right: 8px;
+}

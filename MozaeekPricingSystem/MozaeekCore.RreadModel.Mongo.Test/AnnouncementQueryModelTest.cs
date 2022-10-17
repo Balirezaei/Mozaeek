@@ -1,0 +1,45 @@
+﻿using System;
+using FluentAssertions;
+using MozaeekCore.Persistense.MongoDb;
+using MozaeekCore.RreadModel.Mongo.Test.Builder;
+using Xunit;
+
+namespace MozaeekCore.RreadModel.Mongo.Test
+{
+    public class AnnouncementQueryModelTest : IDisposable
+    {
+        private AnnouncementQueryService _announcementQueryService;
+
+        public AnnouncementQueryModelTest()
+        {
+            Repository = new MongoRepository(new ReadModelDatabaseSettings
+            {
+                ConnectionString = "mongodb://localhost:27017",
+                DatabaseName = "TestReadDb"+new Random().Next(1,1000)
+            });
+            _announcementQueryService = new AnnouncementQueryService(Repository);
+
+            Repository.RequestTargetQueryCollection.InsertOne(new RequestTargetBuilder().BuildSampleTargetQueryWithLableAndRequestOrg());
+
+        }
+
+        public void Dispose()
+        {
+            Repository.RemoveDB();
+        }
+        public MongoRepository Repository { get; set; }
+
+
+
+        [Fact]
+        public async void Should_Create_announcement_On_Mongo_Successfully()
+        {
+            var builder = new AnnouncementBuilder();
+            var parameter = builder.BuildParameter();
+            await _announcementQueryService.Create(parameter);
+            var savedObject = await _announcementQueryService.Get(parameter.Id);
+            savedObject.Title.Should().Be(parameter.Title);
+        }
+
+    }
+}

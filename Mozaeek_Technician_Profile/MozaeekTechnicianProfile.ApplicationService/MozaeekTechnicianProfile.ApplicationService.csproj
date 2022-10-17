@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Command\**" />
+    <Compile Remove="Query\**" />
+    <EmbeddedResource Remove="Command\**" />
+    <EmbeddedResource Remove="Query\**" />
+    <None Remove="Command\**" />
+    <None Remove="Query\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.11" />
+    <PackageReference Include="Mozaeek.CR.PublicDto" Version="1.0.19" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MozaeekTechnicianProfile.ApplicationService.Contract\MozaeekTechnicianProfile.ApplicationService.Contract.csproj" />
+    <ProjectReference Include="..\MozaeekTechnicianProfile.Domain\MozaeekTechnicianProfile.Domain.csproj" />
+    <ProjectReference Include="..\MozaeekTechnicianProfile.Exception\MozaeekTechnicianProfile.Exception.csproj" />
+    <ProjectReference Include="..\MozaeekTechnicianProfile.Framework\MozaeekTechnicianProfile.Core.csproj" />
+    <ProjectReference Include="..\MozaeekTechnicianProfile.Mapper\MozaeekTechnicianProfile.Mapper.csproj" />
+    <ProjectReference Include="..\MozaeekTechnicianProfile.Persistence.Mongo\MozaeekTechnicianProfile.Persistence.Mongo.csproj" />
+    <ProjectReference Include="..\MozaeekTechnicianProfile.UserQuestionProgress\MozaeekTechnicianProfile.UserQuestionProgress.csproj" />
+  </ItemGroup>
+
+</Project>

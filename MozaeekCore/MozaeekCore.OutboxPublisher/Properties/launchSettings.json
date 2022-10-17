@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "MozaeekCore.OutboxPublisherService": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "Environment": "Development"
+      }
+    }
+  }
+}

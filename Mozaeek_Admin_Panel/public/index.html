@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="%PUBLIC_URL%/media/logos/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/font-faces.css" />
+    <!-- SPLASH SCREEN-->
+    <link rel="stylesheet" id="layout-styles-anchor" href="%PUBLIC_URL%/css/splash-screen.css" />
+
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/leaflet.css" />
+
+    <title>Mosaik</title>
+    <style>
+      .logoLoading {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .logoLoading img {
+        margin-bottom: 0;
+        position: absolute;
+        left: 50%;
+        margin-left: -25px;
+        top: 50%;
+        margin-top: -25px;
+        width: 50px;
+        height: 50px;
+      }
+      .logoLoading::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 50%;
+        background-image: url('%PUBLIC_URL%/media/logos/loading.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-animation: rotation 0.9s linear infinite;
+        animation: rotation 0.9s linear infinite;
+      }
+      @-webkit-keyframes rotation {
+        from {
+          -webkit-transform: rotate(0);
+        }
+
+        to {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+      @keyframes rotation {
+        from {
+          transform: rotate(0);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .loading2Holder {
+        width: 100px;
+      }
+      .loading2 {
+        height: 4px;
+        margin-top: 2px;
+        width: 100%;
+        position: relative;
+      }
+      .loading2::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background: linear-gradient(90deg, #004ba8a8, #004ba8);
+        -webkit-animation: loading2anim 1.3s cubic-bezier(0.11, 0.6, 0.57, 0.96) infinite;
+        animation: loading2anim 1.3s cubic-bezier(0.11, 0.6, 0.57, 0.96) infinite;
+        border-radius: 3px;
+      }
+      @-webkit-keyframes loading2anim {
+        0% {
+          left: 0;
+          right: 100%;
+        }
+        30% {
+          left: 0;
+          right: 0;
+        }
+
+        60% {
+          left: 100%;
+          right: 0;
+        }
+        100% {
+          left: 100%;
+          right: 0;
+        }
+      }
+      @keyframes loading2anim {
+        0% {
+          left: 0;
+          right: 100%;
+        }
+        30% {
+          left: 0;
+          right: 0;
+        }
+        60% {
+          left: 100%;
+          right: 0;
+        }
+        100% {
+          left: 100%;
+          right: 0;
+        }
+      }
+    </style>
+  </head>
+  <body id="kt-body">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <div id="splash-screen" class="kt-splash-screen">
+      <img
+        width='65px'
+        src="%PUBLIC_URL%/media/logos/mosaik.png"
+      />
+      <svg class="splash-spinner" viewBox="0 0 50 50">
+        <circle class="path"
+                cx="25"
+                cy="25"
+                r="20"
+                fill="none"
+                stroke-width="5"
+        ></circle>
+      </svg>
+    </div>
+    <div id="layout-portal"></div>
+  </body>
+</html>

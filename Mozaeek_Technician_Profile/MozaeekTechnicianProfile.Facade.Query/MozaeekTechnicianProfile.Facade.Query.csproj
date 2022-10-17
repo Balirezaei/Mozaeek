@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MozaeekTechnicianProfile.ApplicationService\MozaeekTechnicianProfile.ApplicationService.csproj" />
+    <ProjectReference Include="..\MozaeekTechnicianProfile.Core\MozaeekTechnicianProfile.Core.csproj" />
+    <ProjectReference Include="..\MozaeekTechnicianProfile.Facade.Contract\MozaeekTechnicianProfile.Facade.Contract.csproj" />
+  </ItemGroup>
+
+</Project>

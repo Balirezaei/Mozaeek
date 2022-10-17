@@ -1,0 +1,46 @@
+trigger:
+- master
+
+pool:
+  name: 'Default'
+
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
+steps:
+
+- task: NuGetCommand@2
+  inputs:
+    restoreSolution: '$(solution)'
+
+
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: '5.x'
+
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    restoreSolution: '**/*.sln'
+    feedsToUse: 'select'
+    vstsFeed: 'bd34cb29-0faa-45cb-be0f-fc1ffefad385/d0ae134d-5cf0-4f46-bc0d-0e0c5220311f'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: '**/*.csproj'
+    noCache: true
+
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet publish'
+  inputs:
+    command: 'publish'
+    publishWebProjects: false
+    projects: '**/MozaeekTechnicianProfile.RestAPI.csproj'
+    arguments: '-o $(System.DefaultWorkingDirectory)/Output'
+    zipAfterPublish: false
+    modifyOutputPath: true
+    

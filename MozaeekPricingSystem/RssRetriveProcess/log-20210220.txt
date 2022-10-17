@@ -1,0 +1,32 @@
+2021-02-20 13:59:38.555 +03:30 [INF] Default Quartz.NET properties loaded from embedded resource file
+2021-02-20 13:59:38.742 +03:30 [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+2021-02-20 13:59:38.744 +03:30 [INF] Quartz Scheduler v.3.2.4.0 created.
+2021-02-20 13:59:38.745 +03:30 [INF] RAMJobStore initialized.
+2021-02-20 13:59:38.747 +03:30 [INF] Scheduler meta-data: Quartz Scheduler (v3.2.4.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-02-20 13:59:38.752 +03:30 [INF] Quartz scheduler 'DefaultQuartzScheduler' initialized
+2021-02-20 13:59:38.752 +03:30 [INF] Quartz scheduler version: 3.2.4.0
+2021-02-20 13:59:38.753 +03:30 [INF] JobFactory set to: JudgeInquiryBot.WindowsService.Job.IntegrationJobFactory
+2021-02-20 13:59:38.924 +03:30 [INF] Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2021-02-20 14:00:02.815 +03:30 [INF] Invalid object name 'CoreDomain.dbo.RssRetriveHistories'.
+2021-02-20 14:09:43.730 +03:30 [INF] Default Quartz.NET properties loaded from embedded resource file
+2021-02-20 14:09:43.824 +03:30 [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+2021-02-20 14:09:43.825 +03:30 [INF] Quartz Scheduler v.3.2.4.0 created.
+2021-02-20 14:09:43.827 +03:30 [INF] RAMJobStore initialized.
+2021-02-20 14:09:43.829 +03:30 [INF] Scheduler meta-data: Quartz Scheduler (v3.2.4.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-02-20 14:09:43.829 +03:30 [INF] Quartz scheduler 'DefaultQuartzScheduler' initialized
+2021-02-20 14:09:43.829 +03:30 [INF] Quartz scheduler version: 3.2.4.0
+2021-02-20 14:09:43.830 +03:30 [INF] JobFactory set to: JudgeInquiryBot.WindowsService.Job.IntegrationJobFactory

@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MozaeekCore.ApplicationService.Contract\MozaeekCore.ApplicationService.Contract.csproj" />
+    <ProjectReference Include="..\MozaeekCore.ApplicationService\MozaeekCore.ApplicationService.csproj" />
+    <ProjectReference Include="..\MozaeekCore.Core\MozaeekCore.Core.csproj" />
+    <ProjectReference Include="..\MozaeekCore.Facade.Contract\MozaeekCore.Facade.Contract.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Announcement\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mozaeek.CR.PublicDto" Version="1.0.19" />
+  </ItemGroup>
+
+</Project>

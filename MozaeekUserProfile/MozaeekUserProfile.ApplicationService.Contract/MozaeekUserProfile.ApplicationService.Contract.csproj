@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mozaeek.CR.PublicDto" Version="1.0.20" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MozaeekUserProfile.Common\MozaeekUserProfile.Common.csproj" />
+    <ProjectReference Include="..\MozaeekUserProfile.Framework\MozaeekUserProfile.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="UserAnnouncement\" />
+  </ItemGroup>
+
+</Project>

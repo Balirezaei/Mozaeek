@@ -1,0 +1,28 @@
+//
+// Main Styles
+//
+
+////////////////////////////////////////////////////////////////
+///////////// DO NOT MODIFY BELOW INCLUDE ORDER ////////////////
+////////////////////////////////////////////////////////////////
+
+// 1: Initialize
+@import 'init';
+
+// 2: Bootstrap/Material framework includes
+@import '~bootstrap/scss/bootstrap';
+@import 'vendors/material-ui/general';
+
+// 3: Components
+@import 'components/utilities/flex', 'components/utilities/sizing', 'components/utilities/text', 'components/utilities/icon', 'components/burger-icon',
+  'components/breadcrumb', 'components/nav', 'components/alert', 'components/buttons', 'components/dropdown', 'components/separator', 'components/switch',
+  'components/dialog', 'components/symbol', 'components/scrolltop', 'components/svg-icon', 'components/navi';
+
+// 5: Layout
+@import 'layout/init';
+
+// 6: Customizations
+//@import "style.react.custom.scss";
+////////////////////////////////////////////////////////////////
+///////////// DO NOT MODIFY ABOVE INCLUDE ORDER ////////////////
+////////////////////////////////////////////////////////////////

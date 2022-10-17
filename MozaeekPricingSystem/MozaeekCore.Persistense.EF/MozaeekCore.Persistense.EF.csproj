@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20210208201608_rss.cs" />
+    <Compile Remove="Migrations\20210208201608_rss.Designer.cs" />
+    <Compile Remove="Migrations\20210220171116_announcement.cs" />
+    <Compile Remove="Migrations\20210220171116_announcement.Designer.cs" />
+    <Compile Remove="Migrations\20210224180634_1.cs" />
+    <Compile Remove="Migrations\20210224180634_1.Designer.cs" />
+    <Compile Remove="Migrations\20210224184806_technician.cs" />
+    <Compile Remove="Migrations\20210224184806_technician.Designer.cs" />
+    <Compile Remove="Migrations\20210224190306_technician.cs" />
+    <Compile Remove="Migrations\20210224190306_technician.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MozaeekCore.Core\MozaeekCore.Core.csproj" />
+    <ProjectReference Include="..\MozaeekCore.Domain\MozaeekCore.Domain.csproj" />
+    <ProjectReference Include="..\MozaeekCore.QueryModel\MozaeekCore.QueryModel.csproj" />
+    <ProjectReference Include="..\MozaeekCore.ViewModel\MozaeekCore.ViewModel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.11" />
+  </ItemGroup>
+
+</Project>

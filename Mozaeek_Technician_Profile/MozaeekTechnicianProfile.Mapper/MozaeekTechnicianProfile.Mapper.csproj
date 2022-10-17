@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MozaeekTechnicianProfile.ApplicationService.Contract\MozaeekTechnicianProfile.ApplicationService.Contract.csproj" />
+    <ProjectReference Include="..\MozaeekTechnicianProfile.Domain\MozaeekTechnicianProfile.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

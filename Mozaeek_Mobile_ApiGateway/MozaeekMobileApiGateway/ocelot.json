@@ -1,0 +1,421 @@
+﻿{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/otp/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "45.147.77.29",
+          "Port": 500
+        }
+      ],
+      "UpstreamPathTemplate": "/api/otp/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "SwaggerKey": "UserProfile"
+    },
+    {
+      "DownstreamPathTemplate": "/api/token/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "45.147.77.29",
+          "Port": 500
+        }
+      ],
+      "UpstreamPathTemplate": "/api/token/{everything}",
+      "UpstreamHttpMethod": [ "Post" ],
+      "SwaggerKey": "UserProfile"
+    },
+    {
+      "DownstreamPathTemplate": "/api/UserDashboard/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "45.147.77.29",
+          "Port": 500
+        }
+      ],
+      "UpstreamPathTemplate": "/api/UserDashboard/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ApiKey"
+      },
+      "SwaggerKey": "UserProfile"
+    },
+    {
+      "DownstreamPathTemplate": "/api/UserPoint/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "45.147.77.29",
+          "Port": 500
+        }
+      ],
+      "UpstreamPathTemplate": "/api/UserPoint/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ApiKey"
+      },
+      "SwaggerKey": "UserProfile"
+    },
+    {
+      "DownstreamPathTemplate": "/api/UserProfile/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "45.147.77.29",
+          "Port": 500
+        }
+      ],
+      "UpstreamPathTemplate": "/api/UserProfile/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ApiKey"
+      },
+      "SwaggerKey": "UserProfile"
+    },
+    {
+      "DownstreamPathTemplate": "/api/BasicInfo/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "45.147.77.29",
+          "Port": 100
+        }
+      ],
+      "UpstreamPathTemplate": "/api/BasicInfo/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ApiKey"
+      },
+      "SwaggerKey": "CoreDomain"
+    },
+    {
+      "DownstreamPathTemplate": "/api/MosaikFile/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "45.147.77.29",
+          "Port": 100
+        }
+      ],
+      "UpstreamPathTemplate": "/api/MosaikFile/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ApiKey"
+      },
+      "SwaggerKey": "CoreDomain"
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/UserSearch/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "45.147.77.29",
+          "Port": 100
+        }
+      ],
+      "UpstreamPathTemplate": "/api/UserSearch/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ApiKey"
+      },
+      "SwaggerKey": "CoreDomain"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Dashboard/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "45.147.77.29",
+          "Port": 804
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Dashboard/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "SwaggerKey": "Aggregator"
+    },
+    {
+      "DownstreamPathTemplate": "/api/RegisterQuestion/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "45.147.77.29",
+          "Port": 804
+        }
+      ],
+      "UpstreamPathTemplate": "/api/RegisterQuestion/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "SwaggerKey": "Aggregator"
+    },
+    {
+      "DownstreamPathTemplate": "/api/CommonUserProfile/GetAllUserProfileCharacteristicByOwner",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "45.147.77.29",
+          "Port": 804
+        }
+      ],
+      "UpstreamPathTemplate": "/api/UserProfileCharacteristic/GetCharacteristicsByOwner",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "SwaggerKey": "Aggregator"
+    },
+    {
+      "DownstreamPathTemplate": "/api/AnnoucementUserDashboard/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "45.147.77.29",
+          "Port": 500
+        }
+      ],
+      "UpstreamPathTemplate": "/api/AnnoucementUserDashboard/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "SwaggerKey": "UserProfile"
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/Question/GetAllUserQuestion/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "45.147.77.29",
+          "Port": 500
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Question/GetAllUserQuestion/",
+      "UpstreamHttpMethod": [ "Get" ],
+      "SwaggerKey": "UserProfile"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Question/GetOpenUserQuestion/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "45.147.77.29",
+          "Port": 500
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Question/GetOpenUserQuestion/",
+      "UpstreamHttpMethod": [ "Get" ],
+      "SwaggerKey": "UserProfile"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Question/GetActiveUserQuestion/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "45.147.77.29",
+          "Port": 500
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Question/GetActiveUserQuestion/",
+      "UpstreamHttpMethod": [ "Get" ],
+      "SwaggerKey": "UserProfile"
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/UserWallet/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "45.147.77.29",
+          "Port": 500
+        }
+      ],
+      "UpstreamPathTemplate": "/api/UserWallet/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "SwaggerKey": "UserProfile"
+    },
+    {
+      "DownstreamPathTemplate": "/api/UserProfileCharacteristic/CreateCharacteristicOwner",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "45.147.77.29",
+          "Port": 500
+        }
+      ],
+      "UpstreamPathTemplate": "/api/UserProfileCharacteristic/CreateOwner",
+      "UpstreamHttpMethod": [ "Post" ],
+      "SwaggerKey": "UserProfile"
+    },
+    {
+      "DownstreamPathTemplate": "/api/UserProfileCharacteristic/CreateCharacteristic",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "45.147.77.29",
+          "Port": 500
+        }
+      ],
+      "UpstreamPathTemplate": "/api/UserProfileCharacteristic/CreateCharacteristic",
+      "UpstreamHttpMethod": [ "Post" ],
+      "SwaggerKey": "UserProfile"
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/UserProfileCharacteristic/UpdateCharacteristicOwner",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "45.147.77.29",
+          "Port": 500
+        }
+      ],
+      "UpstreamPathTemplate": "/api/UserProfileCharacteristic/UpdateOwner",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "SwaggerKey": "UserProfile"
+    },
+    {
+      "DownstreamPathTemplate": "/api/UserProfileCharacteristic/CreateUserDashboardCharacteristic",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "45.147.77.29",
+          "Port": 500
+        }
+      ],
+      "UpstreamPathTemplate": "/api/UserProfileCharacteristic/CreateDashboard",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "SwaggerKey": "UserProfile"
+    },
+    {
+      "DownstreamPathTemplate": "/api/UserProfileCharacteristic/DeleteCharacteristicOwner/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "45.147.77.29",
+          "Port": 500
+        }
+      ],
+      "UpstreamPathTemplate": "/api/UserProfileCharacteristic/DeleteOwner/{id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "SwaggerKey": "UserProfile"
+    },
+    {
+      "DownstreamPathTemplate": "/api/UserProfileCharacteristic/GetAllCharacteristicOwner",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "45.147.77.29",
+          "Port": 500
+        }
+      ],
+      "UpstreamPathTemplate": "/api/UserProfileCharacteristic/GetAllOwner",
+      "UpstreamHttpMethod": [ "Get" ],
+      "SwaggerKey": "UserProfile"
+    },
+    {
+      "DownstreamPathTemplate": "/api/UserProfileCharacteristic/GetAllUserProfileCharacteristicDashboardSelect",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "45.147.77.29",
+          "Port": 500
+        }
+      ],
+      "UpstreamPathTemplate": "/api/UserProfileCharacteristic/GetCharacteristicsForDashboard",
+      "UpstreamHttpMethod": [ "Get" ],
+      "SwaggerKey": "UserProfile"
+    },
+    {
+      "DownstreamPathTemplate": "/api/QuestionOperation/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "45.147.77.29",
+          "Port": 500
+        }
+      ],
+      "UpstreamPathTemplate": "/api/QuestionOperation/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "SwaggerKey": "UserProfile"
+    },
+    {
+      "DownstreamPathTemplate": "/api/CommonCore/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "45.147.77.29",
+          "Port": 804
+        }
+      ],
+      "UpstreamPathTemplate": "/api/CommonCore/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "SwaggerKey": "Aggregator"
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/UserSuggestedSupport/GetAll",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 809
+        }
+      ],
+      "UpstreamPathTemplate": "/api/UserSuggestedSupport/GetAll",
+      "UpstreamHttpMethod": [ "Get" ],
+      "SwaggerKey": "Support"
+    }
+    ,
+    {
+      "DownstreamPathTemplate": "/api/UserRequestSupport/CreateRequest",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 809
+        }
+      ],
+      "UpstreamPathTemplate": "/api/UserRequestSupport/CreateRequest",
+      "UpstreamHttpMethod": [ "Post" ],
+      "SwaggerKey": "Support"
+    }
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "UserProfile",
+      "Config": [
+        {
+          "Name": "User Profile API",
+          "Version": "v1",
+          "Url": "http://45.147.77.29:500/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "CoreDomain",
+      "Config": [
+        {
+          "Name": "Core Domain API",
+          "Version": "v1",
+          "Url": "http://45.147.77.29:100/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "Aggregator",
+      "Config": [
+        {
+          "Name": "Aggregator API",
+          "Version": "v1",
+          "Url": "http://45.147.77.29:804/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "Support",
+      "Config": [
+        {
+          "Name": "Support",
+          "Version": "v1",
+          "Url": "http://localhost:809/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}

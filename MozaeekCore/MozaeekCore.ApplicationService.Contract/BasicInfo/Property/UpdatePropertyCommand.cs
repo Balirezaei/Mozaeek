@@ -1,0 +1,14 @@
+﻿using MozaeekCore.Core.Base;
+using MozaeekCore.Enum;
+
+namespace MozaeekCore.ApplicationService.Contract
+{
+    public class UpdatePropertyCommand : Command
+    {
+        public long Id { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public PropertyType PropertyType { get; set; }
+        public PropertyDataType PropertyDataType { get; set; }
+    }
+}
